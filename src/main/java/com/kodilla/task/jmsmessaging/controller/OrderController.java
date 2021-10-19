@@ -18,7 +18,7 @@ import lombok.extern.slf4j.Slf4j;
 public class OrderController {
     private JmsTemplate jmsTemplate;
 
-    @PostMapping()
+    @PostMapping
     public void processOrder(@RequestBody Order order) {
         log.info("Received order: {}", order);
 
